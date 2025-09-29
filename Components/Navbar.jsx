@@ -16,7 +16,7 @@ function Navbar() {
 
   async function handleLogout() {
     try {
-      const res = await api.post("/logout");
+      const res = await api.post("/api/logout");
 
       if (res.data.message === "Logged out") {
         navigate("/Hero");
