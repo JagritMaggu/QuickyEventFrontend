@@ -23,7 +23,7 @@ function Homepage() {
   useEffect(() => {
     async function getUser() {
       try {
-        await api.get("/getUser");
+        await api.get("/api/getUser");
       } catch (error) {
         console.log(error);
         toast.error("Unauthorized");

@@ -14,9 +14,9 @@ function MyEvents() {
 
   useEffect(() => {
     async function fetchEvents() {
-      try {   await api.get("/getUser"); 
+      try {   await api.get("/api/getUser"); 
    
-        const res = await api.get("/event");
+        const res = await api.get("/api/event");
         setEvents(res.data);
       } catch (error) {
         console.log(error);

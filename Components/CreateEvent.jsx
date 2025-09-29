@@ -32,7 +32,7 @@ function CreateEvent() {
   useEffect(() => {
     async function getUser() {
        try {
-    await api.get("/getUser"); 
+    await api.get("/api/getUser"); 
    
     } catch (error) {
       console.log(error);
@@ -54,7 +54,7 @@ function CreateEvent() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await api.post("/event", {
+      const res = await api.post("/api/event", {
         Title,
         DateAndTime,
         Description,

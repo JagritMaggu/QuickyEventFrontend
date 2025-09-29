@@ -28,7 +28,7 @@ export default function LoginForm() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      await api.post("/login", {
+      await api.post("/api/login", {
         email,
         password,
       });
