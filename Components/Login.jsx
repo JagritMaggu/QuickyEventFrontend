@@ -53,13 +53,13 @@ export default function LoginForm() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        <h2 className="text-xl sm:text-2xl lg:flex justify-center items-center text-cyan-700 font-bold text-center mb-6">
+        <h2 className="text-2xl flex justify-center items-center text-cyan-700 font-bold text-center mb-6">
           Login Form{" "}
-          <LogIn className="text-cyan-700 ml-2 sm:h-6 sm:w-6 mt-1.5 lg:h-5 lg:w-5 " />
+          <LogIn className="text-cyan-700 ml-2 sm:h-5 sm:w-5  mt-1.5 lg:h-5 lg:w-5 " />
         </h2>
 
         <form onSubmit={handleLogin} className="space-y-4  ">
-      <div className='md:grid md:grid-cols-2 md:justify-center md:w-full space-x-3'>
+      <div className='flex flex-col items-center md:grid md:grid-cols-2 md:justify-center md:w-full space-x-3'>
          <div className="flex flex-col sm:flex-row items-center border rounded-lg px-3 py-2 space-y-2 sm:space-y-0 sm:space-x-3">
   <Mail className="text-cyan-700 h-8 w-8 sm:h-5 sm:w-5" />
   <input
@@ -73,8 +73,8 @@ export default function LoginForm() {
 </div>
 
 
-          <div className="flex flex-col sm:flex-row items-center border rounded-lg px-3 py-2">
-            <Lock className="text-cyan-700 h-8 w-8 sm:h-5 sm:w-5" />
+          <div className="flex flex-col sm:flex-row items-center border rounded-lg px-3 py-2 space-y-2 sm:space-y-0 sm:space-x-3">
+            <Lock className="text-cyan-700 h-3 w-3 sm:h-5 sm:w-5" />
             <input
               type="password"
               placeholder="Enter Password"

@@ -55,7 +55,7 @@ return (
   <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden">
     <div style={bgStyle}> </div>
     <motion.div
-      className="relative z-10 bg-white/20 max-w-5xl p-8 mx-auto rounded-4xl shadow-md w-full"
+      className="relative z-10 bg-white/20 max-w-4xl p-8 mx-auto rounded-4xl shadow-md w-full"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
