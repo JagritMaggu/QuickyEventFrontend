@@ -50,15 +50,13 @@ function CreateEvent() {
   const [DateAndTime, setDateAndTime] = useState("");
   const [Description, setDescription] = useState("");
   const [Location, setLocation] = useState("");
-    const istDate = new Date(DateAndTime);
-  const offset = istDate.getTimezoneOffset(); // minutes diff from UTC
-  const corrected = new Date(istDate.getTime() - offset * 60000);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const res = await api.post("/api/event", {
         Title,
-        DateAndTime: corrected.toISOString(),
+        DateAndTime,
         Description,
         Location,
       });
