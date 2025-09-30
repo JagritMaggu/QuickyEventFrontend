@@ -59,7 +59,7 @@ export default function LoginForm() {
         </h2>
 
         <form onSubmit={handleLogin} className="space-y-4">
-      <div className='flex flex-col items-center md:grid md:grid-cols-2 md:justify-center md:w-full space-x-3'>
+      <div className='flex flex-col items-center w-full md:grid md:grid-cols-2 md:justify-center md:w-full space-x-3'>
          <div className="flex sm:flex-row items-center border rounded-lg px-3 py-2 space-y-2 sm:space-y-0 sm:space-x-3">
   <Mail className="text-cyan-700 h-3 w-3 mt-1  sm:h-5 sm:w-5" />
   <input
