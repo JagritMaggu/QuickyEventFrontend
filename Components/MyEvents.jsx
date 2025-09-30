@@ -240,7 +240,7 @@ function MyEvents() {
                       </p>
                     </div>
 
-                    <div className="grid grid-cols-16 mb-3.5 mt-4.5">
+                    <div className="grid grid-cols-2 md:grid md:grid-cols-16 mb-3.5 mt-4.5">
                       <button
                         onClick={() =>
                           setEditing((prev) => ({ ...prev, [e._id]: true }))
