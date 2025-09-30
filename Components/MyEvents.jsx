@@ -38,7 +38,7 @@ function MyEvents() {
 
   async function handleDelete(id) {
     try {
-      await api.delete(`/event/${id}`);
+      await api.delete(`/api/event/${id}`);
       setEvents(events.filter((e) => e._id !== id));
       toast.success("Event deleted");
     } catch (error) {
@@ -48,7 +48,7 @@ function MyEvents() {
 
   async function handleUpdate(id, updatedFields) {
     try {
-      const res = await api.put(`/event/${id}`, updatedFields);
+      const res = await api.put(`/api/event/${id}`, updatedFields);
       setEvents((prev) =>
         prev.map((e) => (e._id === id ? { ...e, ...res.data } : e))
       );
